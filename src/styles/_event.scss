@@ -1,0 +1,44 @@
+@use "variables.scss";
+
+.event {
+  padding: 80px 0;
+
+  &--aniversariante {
+    background-image: linear-gradient(variables.$blue, variables.$pink);
+  }
+
+  &--atracao {
+    background-image: linear-gradient(variables.$pink, variables.$yellow);
+  }
+
+  &--comida {
+    background-image: linear-gradient(variables.$yellow, variables.$pink);
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+    &--to-left {
+      flex-direction: row-reverse;
+    }
+  }
+
+  &__detail {
+    &__title {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 16px;
+    }
+
+    &__text {
+      font-size: 16px;
+    }
+  }
+
+  &__image {
+    height: 260px;
+    border-radius: 10px;
+  }
+}
