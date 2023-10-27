@@ -5,6 +5,7 @@
   justify-content: space-between;
   padding: 16px 24px;
   border-radius: 8px;
+  white-space: nowrap;
 
   .container-info {
     display: flex;
@@ -26,6 +27,7 @@
 
   @media (max-width: 640px) {
     display: block;
+    white-space: wrap;
 
     .container-info {
       display: block;
@@ -34,5 +36,9 @@
     &__item {
       margin-bottom: 16px;
     }
+  }
+
+  @media (max-width: 1024px) {
+    gap: 10px;
   }
 }
