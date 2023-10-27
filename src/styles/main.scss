@@ -1,4 +1,24 @@
-body {
-  background-color: red;
-  color: white;
+@use "hero";
+@use "variables.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: variables.$txtColorPrimary;
+  font-family: Roboto, sans-serif;
+}
+
+.container {
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+
+  @media (max-width: 1024px) {
+    max-width: 90%;
+  }
+
+  @media (max-width: 640px) {
+    max-width: 80%;
+  }
 }
