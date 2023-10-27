@@ -11,4 +11,14 @@
     background-color: variables.$pink2;
     transition-duration: 0.5s;
   }
+
+  @media (max-width: 640px) {
+    display: block;
+    text-align: center;
+    width: 100%;
+
+    &:hover {
+      background-color: variables.$pink;
+    }
+  }
 }

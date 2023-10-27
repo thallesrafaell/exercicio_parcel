@@ -23,4 +23,16 @@
       color: variables.$txtColorSecundary;
     }
   }
+
+  @media (max-width: 640px) {
+    display: block;
+
+    .container-info {
+      display: block;
+    }
+
+    &__item {
+      margin-bottom: 16px;
+    }
+  }
 }
