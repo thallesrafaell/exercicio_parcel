@@ -1,5 +1,7 @@
 @use "hero";
 @use "variables.scss";
+@use "./components/info";
+@use "components/buttons";
 
 * {
   margin: 0;
